@@ -1,0 +1,19 @@
+const express = require('express');
+const path = require('node:path');
+const { loadData } = require('./data/csv');
+const { analyze } = require('./agents/orchestrator');
+const app = express();
+const data = loadData(path.resolve(__dirname, '../singhacks-jb-wealth-intelligence/data'));
+app.use(express.json());
+app.get('/health', (_req, res) => res.json({ status: 'ok', dataSource: 'SingHacks synthetic CSV dataset' }));
+app.get('/api/clients', (_req, res) => res.json(data.clients.map(({ client_id: id, client_name: name, risk_profile: riskProfile, total_aum_usd: totalAumUsd }) => ({ id, name, riskProfile, totalAumUsd: Number(totalAumUsd) }))));
+app.post('/api/analysis', (req, res) => {
+  const { clientId, question = '' } = req.body || {};
+  if (!clientId) return res.status(400).json({ error: 'clientId is required.' });
+  const result = analyze(data, clientId, question);
+  return result ? res.json(result) : res.status(404).json({ error: `Client ${clientId} was not found.` });
+});
+app.use((_req, res) => res.status(404).json({ error: 'Not found' }));
+const port = Number(process.env.PORT || 3000);
+if (require.main === module) app.listen(port, () => console.log(`Wealth intelligence API listening on http://localhost:${port}`));
+module.exports = app;

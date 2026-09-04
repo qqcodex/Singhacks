@@ -4,7 +4,9 @@
   "description": "��#\u0000 \u0000S\u0000i\u0000n\u0000g\u0000h\u0000a\u0000c\u0000k\u0000s\u0000\r\u0000 \u0000`\u0000 \u0000r\u0000u\u0000n\u0000 \u0000n\u0000p\u0000m\u0000 \u0000-\u0000i\u0000`\u0000\r\u0000 \u0000#\u0000 \u0000F\u0000e\u0000a\u0000t\u0000u\u0000r\u0000e\u0000s\u0000\r\u0000 \u0000\r\u0000 \u0000\r\u0000 \u0000#\u0000 \u0000D\u0000a\u0000t\u0000a\u0000b\u0000a\u0000s\u0000e\u0000\r\u0000 \u0000+\u0000 \u0000r\u0000u\u0000n\u0000 \u0000`\u0000n\u0000p\u0000x\u0000 \u0000k\u0000n\u0000e\u0000x\u0000 \u0000m\u0000i\u0000g\u0000r\u0000a\u0000t\u0000e\u0000:\u0000l\u0000a\u0000t\u0000e\u0000s\u0000t\u0000`\u0000 \u0000",
   "main": "knexfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
   },
   "repository": {
     "type": "git",
