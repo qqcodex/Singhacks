@@ -1,0 +1,6 @@
+google-genai>=2.22.0
+pandas
+python-dotenv
+fastapi
+uvicorn[standard]
+pydantic
