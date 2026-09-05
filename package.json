@@ -1,7 +1,7 @@
 {
   "name": "singhacks",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000S\u0000i\u0000n\u0000g\u0000h\u0000a\u0000c\u0000k\u0000s\u0000\r\u0000 \u0000`\u0000 \u0000r\u0000u\u0000n\u0000 \u0000n\u0000p\u0000m\u0000 \u0000-\u0000i\u0000`\u0000\r\u0000 \u0000#\u0000 \u0000F\u0000e\u0000a\u0000t\u0000u\u0000r\u0000e\u0000s\u0000\r\u0000 \u0000\r\u0000 \u0000\r\u0000 \u0000#\u0000 \u0000D\u0000a\u0000t\u0000a\u0000b\u0000a\u0000s\u0000e\u0000\r\u0000 \u0000+\u0000 \u0000r\u0000u\u0000n\u0000 \u0000`\u0000n\u0000p\u0000x\u0000 \u0000k\u0000n\u0000e\u0000x\u0000 \u0000m\u0000i\u0000g\u0000r\u0000a\u0000t\u0000e\u0000:\u0000l\u0000a\u0000t\u0000e\u0000s\u0000t\u0000`\u0000 \u0000",
+  "description": "SingHacks 2026 - Julius Baer Wealth Intelligence",
   "main": "knexfile.js",
   "scripts": {
     "start": "node src/server.js",
@@ -15,15 +15,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/qqcodex/Singhacks/issues"
   },
   "homepage": "https://github.com/qqcodex/Singhacks#readme",
   "dependencies": {
+    "csv-parse": "^5.5.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "knex": "^3.3.0",
-    "mssql": "^12.7.0"
+    "mssql": "^12.7.0",
+    "node-fetch": "^3.3.2",
+    "p-limit": "^5.0.0"
   }
 }
