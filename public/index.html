@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurelia | Wealth Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/query.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#"><span class="brand-mark">a</span><span>AURELIA</span></a>
+        <p class="sidebar-label">WEALTH INTELLIGENCE</p>
+        <nav>
+          <a class="nav-item active" href="#overview"><span>◈</span> Overview</a>
+          <a class="nav-item" href="#risks"><span>◇</span> Risk signals <b id="risk-nav-count">0</b></a>
+          <a class="nav-item" href="#context"><span>○</span> Market context</a>
+          <a class="nav-item" href="#actions"><span>↗</span> Action plan</a>
+        </nav>
+        <div class="sidebar-footer"><div class="advisor-avatar">PO</div><div><strong>Priscilla Ong</strong><small>Relationship Manager</small></div><button aria-label="More options">•••</button></div>
+      </aside>
+
+      <main>
+        <header class="topbar"><div class="crumb"><span>CLIENT INTELLIGENCE</span><i>/</i><strong id="crumb-name">Loading client</strong></div><div class="top-actions"><span class="as-of">As of 26 Aug 2026</span><button class="icon-button" aria-label="Notifications">♢</button><button class="rm-chip"><span>PO</span> Priscilla</button></div></header>
+        <section class="client-selector"><div><p class="eyebrow">PRIVATE BANKING WORKBENCH</p><h1>Know what matters <em>before</em> the meeting.</h1></div><label class="client-select-label">Viewing client<select id="client-select" aria-label="Select client"></select></label></section>
+        <section class="hero" id="overview"><div class="hero-copy"><div class="risk-pill" id="risk-pill">ANALYSING</div><h2 id="headline">Building the portfolio intelligence view…</h2><p id="client-objective"></p><div class="hero-actions"><button class="primary-button" id="prepare-button">Prepare meeting brief <span>→</span></button><button class="text-button" id="ask-button">Ask a question <span>↗</span></button></div></div><div class="hero-status"><span class="status-dot"></span><p><strong>RM review required</strong><br />Every insight retains its evidence trail.</p></div></section>
+        <section class="metrics" aria-label="Portfolio metrics"><article><p>Portfolio value</p><strong id="metric-aum">—</strong><small id="metric-change">—</small></article><article><p>Largest exposure</p><strong id="metric-largest">—</strong><small>Across all portfolios</small></article><article><p>Liquid assets</p><strong id="metric-liquid">—</strong><small id="metric-coverage">—</small></article><article><p>Credit utilisation</p><strong id="metric-ltv">—</strong><small>Current loan-to-value</small></article></section>
+        <section class="content-grid"><div class="main-column"><section class="section-heading" id="risks"><div><p class="eyebrow">PRIORITY SIGNALS</p><h3>What needs attention now</h3></div><button class="outline-button" id="show-all-risks">View all signals</button></section><div id="risk-list" class="risk-list"></div><section class="section-heading action-heading" id="actions"><div><p class="eyebrow">RM ACTION PLAN</p><h3>Turn insight into a conversation</h3></div></section><div id="recommendations" class="recommendations"></div></div><aside class="right-column"><section class="panel allocation-panel"><div class="panel-title"><h3>Portfolio composition</h3><span>CLIENT TOTAL</span></div><div class="donut-wrap"><div class="donut" id="donut"><div><strong id="donut-total">—</strong><small>USD total</small></div></div><ul id="allocation-list" class="legend"></ul></div></section><section class="panel" id="context"><div class="panel-title"><h3>Market context</h3><span>EVENT LOG</span></div><div id="event-list" class="event-list"></div><button class="panel-link" id="view-evidence">View evidence trail <span>→</span></button></section><section class="panel rm-note"><span class="quote-mark">“</span><p id="note-text">Loading relationship context…</p><small id="note-meta"></small></section></aside></section>
+      </main>
+    </div>
+    <dialog id="brief-dialog"><div class="dialog-content"><button class="dialog-close" aria-label="Close">×</button><p class="eyebrow">MEETING BRIEF</p><h2 id="brief-title">Client briefing</h2><div id="brief-content"></div><button class="primary-button dialog-close-button">Done</button></div></dialog>
+    <dialog id="question-dialog"><div class="dialog-content"><button class="dialog-close" aria-label="Close">×</button><p class="eyebrow">CLIENT INTELLIGENCE QUERY</p><h2>Explore this client’s data</h2><form id="question-form"><label for="question-input">Ask about risk, liquidity, currency, credit, or mandate status</label><textarea id="question-input" required placeholder="e.g. What could make this client sell assets at the wrong time?"></textarea><button class="primary-button" type="submit">Analyse question <span>→</span></button></form><div id="question-answer" hidden></div></div></dialog>
+    <script src="/app.js"></script>
+  </body>
+</html>

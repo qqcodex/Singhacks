@@ -1,0 +1,10 @@
+#question-form { display:grid; gap:10px; }
+#question-form label { color:#52635f; font-size:12px; }
+#question-input { min-height:92px; padding:12px; border:1px solid #bcc9c3; border-radius:5px; resize:vertical; color:#172b2b; font:13px/1.45 'DM Sans',Arial,sans-serif; }
+#question-form .primary-button { justify-self:start; }
+#question-answer { margin-top:23px; padding-top:18px; border-top:1px solid #dbe2de; }
+#question-answer h3 { margin:0 0 8px; font:600 19px 'Playfair Display',Georgia,serif; }
+#question-answer p { color:#52635f; font-size:13px; line-height:1.55; }
+#question-answer .answer-evidence { display:grid; gap:7px; margin-top:13px; }
+#question-answer .answer-evidence div { padding:9px 10px; border-radius:4px; background:#edf4ef; color:#3c5852; font-size:11px; }
+#question-answer strong { color:#1e5048; }
