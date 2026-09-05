@@ -58,7 +58,7 @@ function buildFallbackInsight(analytics, historicalEvents) {
 async function summarizeWithGemini(query, articles) {
   if (!process.env.GEMINI_API_KEY || !articles.length) return null;
   const prompt = `You are a private-bank market-risk analyst.
-Summarize these articles for an RM workflow.
+Summarize these articles for an RM workflow and give actionable steps.
 Return JSON only with an "insights" array of up to 3 objects. Each object must have title, summary, source, url.
 Focus on portfolio risk implications, not investment advice.
 

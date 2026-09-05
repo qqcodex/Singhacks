@@ -7,7 +7,7 @@
 <style>
 :root{
   --bg:#f5f7f8; --surface:#fff; --surface-2:#f8fafb; --border:#e3e8eb;
-  --text:#172126; --muted:#68777d; --teal:#087f78; --teal-2:#0b9a91;
+  --text:#172126; --muted:#68777d; --teal:#141e55; --teal-2:#141e30;
   --teal-soft:#e5f5f3; --red:#c73a43; --red-soft:#fff0f1; --amber:#b87800;
   --amber-soft:#fff7df; --green:#247a4b; --green-soft:#eaf7ef;
   --shadow:0 10px 30px rgba(20,38,44,.07); --radius:16px;
@@ -543,7 +543,25 @@ async function askAI(){
   }
   chat.scrollTop=chat.scrollHeight;
 }
+function renderPriorityTableFromData(ranked) {
+  const urgencyEmoji = { critical: '🔴', high: '🟠', medium: '🟡', low: '🟢' };
+  const urgencyLabel = { critical: 'Call today', high: 'Call this week', medium: 'Review', low: 'Monitor' };
 
+  document.getElementById('priorityRows').innerHTML = ranked.slice(0, 8).map((r, i) => {
+    const u = r.urgency;
+    return `<div class="priority-row" onclick="showClient('${r.clientId}')">
+      <div><div class="priority-rank ${u}">${i + 1}</div></div>
+      <div>
+        <div style="font-weight:700;font-size:12px">${escapeHtml(r.name)}</div>
+        <div class="priority-why">${r.clientId} · ${compactMoney(r.aum)}</div>
+        <div style="margin-top:4px"><span class="pill ${u==='critical'||u==='high'?'high':u==='medium'?'medium':'low'}">${urgencyEmoji[u]} ${urgencyLabel[u]}</span></div>
+      </div>
+      <div class="priority-why">${escapeHtml((r.why||'').substring(0, 90))}…</div>
+      <div class="priority-why" style="color:#42545a">${escapeHtml((r.firstTalkingPoint||'').substring(0, 100))}…</div>
+      <div><button class="priority-action-btn" onclick="event.stopPropagation();showClient('${r.clientId}')">View →</button></div>
+    </div>`;
+  }).join('');
+}
 async function init(){
   try {
     CLIENTS = await fetchClients();
