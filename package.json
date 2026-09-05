@@ -26,7 +26,11 @@
     "express": "^5.2.1",
     "knex": "^3.3.0",
     "mssql": "^12.7.0",
+<<<<<<< HEAD
     "node-fetch": "^3.3.2",
     "p-limit": "^5.0.0"
+=======
+    "multer": "^2.3.0"
+>>>>>>> 0cb92e51d2eedbd4395bc2013e2f93a0ec1dc4f3
   }
 }
