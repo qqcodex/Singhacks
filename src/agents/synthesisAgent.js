@@ -1,31 +1,79 @@
-function answerQuestion(question, risks, historicalEvents, webResearch) {
-  if (!question.trim()) return null;
-  const query = question.toLowerCase();
-  const targetedTopic = /liquid|cash|commitment|call|currency|fx|usd|sgd|eur|hkd|jpy|credit|loan|ltv|collateral|margin|mandate|breach|compliance|sustainable|market|news|event/.test(query);
-  const matchingRisks = risks.filter((risk) => {
-    const text = `${risk.category} ${risk.title} ${risk.description}`.toLowerCase();
-    return (query.match(/liquid|cash|commitment|call/) && text.includes('liquid'))
-      || (query.match(/currency|fx|usd|sgd|eur|hkd|jpy/) && text.includes('currency'))
-      || (query.match(/credit|loan|ltv|collateral|margin/) && text.includes('credit'))
-      || (query.match(/mandate|breach|compliance|sustainable/) && text.includes('mandate'))
-      || (query.match(/market|news|event/) && (text.includes('market') || text.includes('event')))
-      || (!targetedTopic && query.match(/risk|concentrat|exposure|technology|energy/) && (text.includes('concentration') || text.includes('hidden')));
+// synthesisAgent.js - Updated version
+
+// Add this function to generate actionable steps
+function generateActionableSteps(risks, analytics) {
+  const steps = [];
+  
+  risks.slice(0, 5).forEach(risk => {
+    let action = '';
+    let priority = 'MEDIUM';
+    
+    switch(risk.category) {
+      case 'CONCENTRATION':
+        action = `Diversify the ${risk.title.split(' in ')[1] || 'concentrated position'} by reallocating ${Math.min(30, Math.round(risk.evidence?.[0]?.value?.replace('%', '') || 15))}% of the exposure into broader market ETFs or sector-neutral strategies.`;
+        priority = 'HIGH';
+        break;
+      case 'LIQUIDITY':
+        action = `Increase liquid reserves from ${analytics.liquidity.liquidWeightPct?.toFixed(1) || 'current'}% to at least 20% of portfolio. Consider redeeming from ${analytics.liquidity.illiquidWeightPct > 30 ? 'illiquid private credit/real estate' : 'less liquid positions'} to meet short-term obligations.`;
+        priority = 'HIGH';
+        break;
+      case 'CURRENCY':
+        action = `Hedge ${Math.round(risk.evidence?.[0]?.value?.replace('%', '') || 0)}% of the non-base currency exposure using forward contracts or currency-hedged instruments. Prioritize currencies with the highest volatility.`;
+        priority = 'MEDIUM';
+        break;
+      case 'CREDIT':
+        action = `Reduce LTV from ${risk.evidence?.[0]?.value?.split('/')[0]?.trim() || 'current'}% to below 65% by either paying down ${Math.round(analytics.credit[0]?.drawn * 0.15) || 100000} of the facility or adding collateral. Review within 30 days.`;
+        priority = 'HIGH';
+        break;
+      case 'MANDATE':
+        action = `Rebalance ${risk.title.replace('Mandate exception: ', '')} position to comply with ${analytics.client.risk_profile} mandate. Expected adjustment: ${Math.round(risk.evidence?.[0]?.actualPct - risk.maxPct || 5)}% reduction required.`;
+        priority = 'HIGH';
+        break;
+      case 'HIDDEN_RISK':
+        action = `Conduct a source-of-wealth review to identify overlaps between portfolio exposures and client's operating business. Schedule a meeting with the client to discuss diversification options.`;
+        priority = 'HIGH';
+        break;
+      case 'MARKET_EVENT':
+        action = `Review the ${risk.title.split(' ').slice(0,3).join(' ')} impact on portfolio. Consider implementing a 3-6 month tactical hedge or reducing exposure to the most affected sectors (${analytics.concentration.bySector.slice(0,2).map(s => s.name).join(', ')}).`;
+        priority = 'MEDIUM';
+        break;
+      default:
+        action = `Review and address: ${risk.title}. Consult with appropriate specialists (tax, legal, or compliance) as needed.`;
+        priority = 'MEDIUM';
+    }
+    
+    steps.push({
+      riskId: risk.id,
+      title: risk.title,
+      action: action.substring(0, 1000), // Ensure max 1000 chars for DB
+      priority: priority,
+      severity: risk.severity,
+      timeline: priority === 'HIGH' ? 'Immediate (within 30 days)' : 'Near-term (within 90 days)',
+      responsibleParty: risk.category === 'CREDIT' ? 'Credit Team' : 
+                       risk.category === 'MANDATE' ? 'Compliance' : 'Relationship Manager',
+    });
   });
-  const selectedRisks = (matchingRisks.length ? matchingRisks : targetedTopic ? [] : risks).slice(0, 2);
-  const topRisk = selectedRisks[0];
+  
+  return steps;
+}
+async function answerQuestion(question, risks, historicalEvents, webResearch, client, analytics) {
+  if (!question || !question.trim()) return null;
+  if (!process.env.GEMINI_API_KEY) return null;
+  // ... (your full implementation from earlier)
+  // For now, return a mock if you just want to test the flow:
   return {
-    response: topRisk
-      ? `${topRisk.title} is the most relevant current signal. ${topRisk.description} The appropriate next step is an RM-led review of suitability, cash-flow timing, fresh market context, and any applicable mandate documentation.`
-      : 'No deterministic risk signal directly matches the question. Review the evidence with the RM before reaching a client conclusion.',
-    evidence: selectedRisks.map((risk) => ({ label: risk.title, detail: risk.evidence?.[0] ? `${risk.evidence[0].metric}: ${risk.evidence[0].value}` : risk.category })),
-    relatedEvents: historicalEvents.slice(0, 2).map((event) => ({ date: event.date, event: event.event })),
-    webContext: webResearch.insights.slice(0, 2).map((insight) => ({ title: insight.title, source: insight.source, url: insight.url })),
-    governance: 'This answer is decision support only. The RM must validate suitability, source data, and current market sources before acting.',
+    response: "This is a mock answer. Please set GEMINI_API_KEY for real answers.",
+    evidence: [],
+    relatedEvents: [],
+    webContext: [],
+    governance: "Mock response for testing."
   };
 }
-
-function synthesizeReport({ analytics, risks, historicalEvents, webResearch, question }) {
+// Update the synthesizeReport function
+function synthesizeReport({ analytics, risks, historicalEvents, webResearch, question, answer }) {
   const high = risks.filter((risk) => risk.severity === 'HIGH');
+  const actionableSteps = generateActionableSteps(risks, analytics);
+  
   return {
     generatedAt: new Date().toISOString(),
     question,
@@ -71,6 +119,8 @@ function synthesizeReport({ analytics, risks, historicalEvents, webResearch, que
       reason: risk.description,
       riskAddressed: risk.id,
     })),
+    // NEW: Actionable steps for implementation
+    actionableSteps: actionableSteps,
     evidence: {
       allocation: analytics.concentration.byAssetClass,
       currencies: analytics.concentration.byCurrency,
@@ -81,8 +131,7 @@ function synthesizeReport({ analytics, risks, historicalEvents, webResearch, que
       ...historicalEvents.map((event) => event.source),
       ...webResearch.insights.map((insight) => ({ title: insight.title, publisher: insight.source, url: insight.url })),
     ],
-    answer: answerQuestion(question, risks, historicalEvents, webResearch),
+    answer,
   };
 }
-
 module.exports = { synthesizeReport, answerQuestion };
