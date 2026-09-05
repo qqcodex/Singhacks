@@ -72,4 +72,4 @@ function calculateAnalytics(data, clientId) {
   };
 }
 
-module.exports = { calculateAnalytics, CURRENT_DATE, BASELINE_DATE };
+export { calculateAnalytics };

@@ -20,4 +20,5 @@ function discoverRisks(analytics, historicalEvents = [], webResearch = { insight
   });
   return risks.sort((a, b) => ({ HIGH: 3, MEDIUM: 2, LOW: 1 }[b.severity] - ({ HIGH: 3, MEDIUM: 2, LOW: 1 }[a.severity]))).slice(0, 8);
 }
-module.exports = { discoverRisks };
+// module.exports = { discoverRisks };
+export { discoverRisks };

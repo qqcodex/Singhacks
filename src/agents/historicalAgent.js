@@ -14,4 +14,5 @@ function researchEvents(events, analytics) {
     });
   return relevant;
 }
-module.exports = { researchEvents };
+// module.exports = { researchEvents };
+export { researchEvents };

@@ -134,4 +134,4 @@ function synthesizeReport({ analytics, risks, historicalEvents, webResearch, que
     answer,
   };
 }
-module.exports = { synthesizeReport, answerQuestion };
+export { synthesizeReport, answerQuestion };

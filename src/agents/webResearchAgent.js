@@ -108,4 +108,6 @@ async function researchWeb(analytics, historicalEvents, question = '') {
   }
 }
 
-module.exports = { researchWeb, buildResearchQuery };
+// module.exports = { researchWeb, buildResearchQuery };
+export { researchWeb, buildResearchQuery };
+

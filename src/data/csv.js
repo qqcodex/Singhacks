@@ -1,5 +1,5 @@
-const fs = require('node:fs');
-const path = require('node:path');
+import fs from 'node:fs';
+import path from 'node:path';
 
 function parseCsv(text) {
   const rows = [];
@@ -32,4 +32,5 @@ function loadData(dataDirectory) {
   };
 }
 
-module.exports = { loadData };
+// module.exports = { loadData };
+export { loadData };

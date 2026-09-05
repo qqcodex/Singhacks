@@ -86,4 +86,5 @@ Format your response as JSON with the following structure:
   }
 }
 
-module.exports = { processDocument };
+// module.exports = { processDocument };
+export { processDocument };
