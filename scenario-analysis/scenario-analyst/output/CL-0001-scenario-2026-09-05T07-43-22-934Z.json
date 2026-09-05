@@ -1,0 +1,82 @@
+{
+  "positiveScenario": {
+    "narrative": "A constructive scenario where current headwinds abate.  Central banks achieve soft landing with inflation moderating.  This supports risk assets and the client's growth-oriented holdings.",
+    "keyDrivers": [
+      "Central bank policy normalization"
+    ],
+    "probability": 0.4,
+    "portfolioImpact": {
+      "expectedReturnPct": 5.2,
+      "keyHoldingsAffected": [
+        "SYN-ST-0101",
+        "SYN-EQ-0001",
+        "SYN-FI-0204"
+      ],
+      "rationale": "Broad risk-on environment lifts equity and credit positions; gold hedge moderates gains"
+    }
+  },
+  "negativeScenario": {
+    "narrative": "A stress scenario where current risks compound.  Persistent inflation forces further rate hikes, pressuring duration and growth assets.  Energy concentration amplifies portfolio volatility.",
+    "keyDrivers": [
+      "Rising rates pressure duration assets"
+    ],
+    "probability": 0.6,
+    "portfolioImpact": {
+      "expectedReturnPct": -8.5,
+      "keyHoldingsAffected": [
+        "SYN-ST-0101",
+        "SYN-EQ-0001",
+        "SYN-FI-0204"
+      ],
+      "rationale": "Energy concentration exposed to supply shock; long duration bonds pressured; growth equities de-rate"
+    }
+  },
+  "defensePositive": {
+    "arguments": [
+      "Portfolio has explicit geopolitical hedges (gold, macro fund)",
+      "Short duration bond allocation limits rate sensitivity",
+      "Quality bias in equity holdings provides downside resilience"
+    ],
+    "supportingData": [
+      "Gold position: Present",
+      "Short duration bonds: Present",
+      "Macro hedge fund: Present"
+    ],
+    "hedgesInPlace": [
+      "Gold Bullion ETF (SYN-CM-0402)",
+      "Short Duration USD Bond Fund (SYN-FI-0208)",
+      "Tanjong Global Macro Fund (SYN-AL-0303)"
+    ]
+  },
+  "defenseNegative": {
+    "arguments": [
+      "Single-stock energy concentration (97% of PF-0002) creates source-of-wealth overlap",
+      "Rising rates pressure long-duration fixed income (US Treasury 2045)",
+      "Illiquid alternatives (private equity, real estate) limit rebalancing agility"
+    ],
+    "supportingData": [
+      "Bara Nusantara Energy = 97% of PF-0002",
+      "US Treasury 2.375% 2045 down ~38% from cost basis",
+      "Private equity/real estate = meaningful illiquid allocation"
+    ],
+    "mitigations": [
+      "Reduce energy single-stock concentration via staged diversification",
+      "Add inflation-linked bonds (SYN-FI-0212) for real yield protection",
+      "Pre-approve rebalancing triggers for mandate breaches",
+      "Increase liquid reserves to 15%+ for opportunistic deployment"
+    ]
+  },
+  "rmTalkingPoints": [
+    "Client's energy concentration (Bara Nusantara) is the dominant risk - aligns with family business but creates overlap",
+    "Gold and macro fund provide partial hedge but may not fully offset energy shock",
+    "Short duration bonds protect income stability; long Treasury is the main duration risk",
+    "Client objectives (diversify from family business) directly conflict with current concentration",
+    "Recommend phased diversification of energy position before Q4 2026 property purchase",
+    "Pre-approve rebalancing bands to act decisively if Hormuz situation worsens"
+  ],
+  "governance": {
+    "status": "RM_REVIEW_REQUIRED",
+    "generatedAt": "2026-09-05T07:43:22.933Z",
+    "disclaimer": "FALLBACK MODE - NIM unavailable: NVIDIA_API_KEY not configured. Scenario analysis uses rule-based logic; validate before client action. Not investment advice."
+  }
+}

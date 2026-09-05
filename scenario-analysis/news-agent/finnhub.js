@@ -42,6 +42,8 @@ async function fetchFinnhub(endpoint, params = {}) {
   const url = new URL(`${CONFIG.finnhub.baseUrl}${endpoint}`);
   url.searchParams.set('token', CONFIG.finnhub.apiKey);
   Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
+  
+  console.log(`[Finnhub] GET ${url.toString()}`);
 
   const res = await fetch(url);
   if (!res.ok) {
@@ -65,23 +67,14 @@ export async function fetchAllNews(tickers, lookbackDays = CONFIG.news.lookbackD
   const to = new Date().toISOString().split('T')[0];
   const from = new Date(Date.now() - lookbackDays * 86400000).toISOString().split('T')[0];
 
-  const companyNewsPromises = tickers
-    .slice(0, 20)
-    .map(symbol => fetchCompanyNews(symbol, from, to)
-      .then(articles => articles.map(a => ({ ...a, sourceType: 'company', symbol })))
-      .catch(err => { console.warn(`Finnhub company-news failed for ${symbol}:`, err.message); return []; }));
-
+  // Skip company-news (requires paid tier), use general news categories only
   const categoryPromises = CONFIG.news.categories
     .map(category => fetchGeneralNews(category)
       .then(articles => articles.map(a => ({ ...a, sourceType: 'general', category })))
       .catch(err => { console.warn(`Finnhub general news failed for ${category}:`, err.message); return []; }));
 
-  const [companyResults, categoryResults] = await Promise.all([
-    Promise.all(companyNewsPromises),
-    Promise.all(categoryPromises)
-  ]);
-
-  const allArticles = [...companyResults.flat(), ...categoryResults.flat()];
+  const categoryResults = await Promise.all(categoryPromises);
+  const allArticles = categoryResults.flat();
 
   const seen = new Set();
   const unique = allArticles.filter(a => {
