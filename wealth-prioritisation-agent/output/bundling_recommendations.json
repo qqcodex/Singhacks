@@ -1,0 +1,1059 @@
+{
+  "client_recommendations": [
+    {
+      "client_id": "CL-0017",
+      "name": "Fong Enterprises Family Office",
+      "aum_usd": 87902980.0,
+      "risk_profile": "Balanced",
+      "life_stage": "Multi-generational - G2 and G3",
+      "primary_bundle": {
+        "bundle_key": "LIQUIDITY_BRIDGE",
+        "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+        "fit_score": 100,
+        "triggered_flags": [
+          "liquidity_gap",
+          "fund_gating",
+          "liquidity_gap",
+          "fund_gating"
+        ],
+        "key_components": [
+          "Ultra-Short Treasury Fund",
+          "Committed Credit Facility",
+          "Money Market Fund",
+          "Structured Deposit"
+        ],
+        "estimated_allocation_usd": 26370894.0,
+        "rationale": "Addresses: liquidity shortfall for capital calls, gated fund redemption constraints, liquidity shortfall for capital calls, gated fund redemption constraints."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "FAMILY_OFFICE_MULTI_GEN",
+          "bundle_name": "Multi-Generational Family Office Bundle",
+          "fit_score": 100,
+          "triggered_flags": [
+            "multi_generational"
+          ],
+          "key_components": [
+            "G1 - Preservation Sleeve",
+            "G2 - Growth Sleeve",
+            "G3 - Venture/Innovation Sleeve",
+            "Family Governance Advisory"
+          ],
+          "estimated_allocation_usd": 70322384.0,
+          "rationale": "Matches Balanced risk profile. Aligned with Multi-generational - G2 and G3 life stage. Addresses: multi-generational family structure."
+        },
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 26370894.0,
+          "rationale": "Addresses: concentration breaches."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $87,902,980 | Risk: Balanced | Stage: Multi-generational - G2 and G3 | Top holdings: N/A | Single stock count: 0 | Flags: 11 (liquidity_gap, fund_gating, single_position_breach)",
+      "implementation_notes": "Liquidity gap: cash on hand $5,393,600 vs uncalled commitments $15,800,000 (shortfall $10,406,400) | Fund gating: RM note (2026-02-10): \"Capital call of USD 3.2m met from the sleeve's cash. Flagged to the family office CFO that between the remaining commitments and the gated p\" | Fund gating: RM note (2026-06-30): \"Investment committee review. G2 wants to keep the core mandate conservative. G3 representatives pushed for more technology and venture expos\" | Complementary: Add collar structure on concentrated position while staging exit"
+    },
+    {
+      "client_id": "CL-0002",
+      "name": "Ravi Chandrasekaran",
+      "aum_usd": 46699200.0,
+      "risk_profile": "Growth",
+      "life_stage": "Pre-liquidity event",
+      "primary_bundle": {
+        "bundle_key": "CONCENTRATION_SOLUTION",
+        "bundle_name": "Concentration Risk Diversification Bundle",
+        "fit_score": 100,
+        "triggered_flags": [
+          "single_position_breach",
+          "ltv_margin_call_risk",
+          "margin_call_risk"
+        ],
+        "key_components": [
+          "Exchange Fund / Swap Structure",
+          "Collar / Put Spread Structure",
+          "Global Developed Equity Index Fund",
+          "Short Duration USD Bond Fund"
+        ],
+        "estimated_allocation_usd": 14009760.0,
+        "rationale": "Addresses: concentration breaches, ltv_margin_call_risk, margin call proximity risk."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "GROWTH_ACCELERATION",
+          "bundle_name": "Growth Acceleration & Alpha Bundle",
+          "fit_score": 95,
+          "triggered_flags": [
+            "growth_profile"
+          ],
+          "key_components": [
+            "US Technology Leaders Fund",
+            "Emerging Markets Equity Fund",
+            "Private Equity Co-Investment",
+            "Venture Capital Fund"
+          ],
+          "estimated_allocation_usd": 23349600.0,
+          "rationale": "Matches Growth risk profile. Aligned with Pre-liquidity event life stage. Addresses: growth-oriented mandate."
+        },
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "margin_call_risk"
+          ],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 14009760.0,
+          "rationale": "Addresses: margin call proximity risk."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $46,699,200 | Risk: Growth | Stage: Pre-liquidity event | Top holdings: N/A | Single stock count: 0 | Flags: 4 (ltv_margin_call_risk, single_position_breach)",
+      "implementation_notes": "Phase diversification over 12 months (10% quarterly tranches) to manage market impact and tax | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0001",
+      "name": "Hartono Wijaya Kusuma",
+      "aum_usd": 46571821.48,
+      "risk_profile": "Balanced Growth",
+      "life_stage": "Wealth accumulation - second generation",
+      "primary_bundle": {
+        "bundle_key": "CONCENTRATION_SOLUTION",
+        "bundle_name": "Concentration Risk Diversification Bundle",
+        "fit_score": 100,
+        "triggered_flags": [
+          "single_position_breach",
+          "high_concentration"
+        ],
+        "key_components": [
+          "Exchange Fund / Swap Structure",
+          "Collar / Put Spread Structure",
+          "Global Developed Equity Index Fund",
+          "Short Duration USD Bond Fund"
+        ],
+        "estimated_allocation_usd": 13971546.44,
+        "rationale": "Addresses: concentration breaches, extreme single-stock concentration (>30%). Critical: Bara Nusantara Energy Tbk at 98.0% requires urgent diversification."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "BALANCED_GROWTH",
+          "bundle_name": "Balanced Growth & Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "balanced_profile"
+          ],
+          "key_components": [
+            "Global Developed Equity Index Fund",
+            "Asia ex-Japan Equity Fund",
+            "US Technology Leaders Fund",
+            "Asia Investment Grade Credit Fund"
+          ],
+          "estimated_allocation_usd": 23285910.74,
+          "rationale": "Matches Balanced Growth risk profile. Aligned with Wealth accumulation - second generation life stage. Addresses: balanced growth mandate. Critical: Bara Nusantara Energy Tbk at 98.0% requires urgent diversification."
+        },
+        {
+          "bundle_key": "POST_LIQUIDITY_DEPLOYMENT",
+          "bundle_name": "Post-Liquidity Event Deployment Bundle",
+          "fit_score": 80,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Staged Deployment Program",
+            "Tax-Managed Equity Portfolio",
+            "Municipal Bond Ladder",
+            "Alternatives Diversifier"
+          ],
+          "estimated_allocation_usd": 13971546.44,
+          "rationale": "Matches Balanced Growth risk profile. Addresses: concentration breaches. Critical: Bara Nusantara Energy Tbk at 98.0% requires urgent diversification."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $46,571,821 | Risk: Balanced Growth | Stage: Wealth accumulation - second generation | Top holdings: Bara Nusantara Energy Tbk, Global Developed Equity Index Fund, Asia Investment Grade Credit Fund | Single stock count: 1 | Flags: 3 (single_position_breach)",
+      "implementation_notes": "Phase diversification over 12 months (10% quarterly tranches) to manage market impact and tax | URGENT: Bara Nusantara Energy Tbk at 98.0% exceeds all mandate limits"
+    },
+    {
+      "client_id": "CL-0007",
+      "name": "Alistair Pemberton-Hale",
+      "aum_usd": 40019276.0,
+      "risk_profile": "Balanced",
+      "life_stage": "Retired - legacy and philanthropy",
+      "primary_bundle": {
+        "bundle_key": "CONCENTRATION_SOLUTION",
+        "bundle_name": "Concentration Risk Diversification Bundle",
+        "fit_score": 90,
+        "triggered_flags": [
+          "single_position_breach"
+        ],
+        "key_components": [
+          "Exchange Fund / Swap Structure",
+          "Collar / Put Spread Structure",
+          "Global Developed Equity Index Fund",
+          "Short Duration USD Bond Fund"
+        ],
+        "estimated_allocation_usd": 12005782.8,
+        "rationale": "Addresses: concentration breaches."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 12005782.8,
+          "rationale": "."
+        },
+        {
+          "bundle_key": "BALANCED_GROWTH",
+          "bundle_name": "Balanced Growth & Diversification Bundle",
+          "fit_score": 65,
+          "triggered_flags": [
+            "balanced_profile"
+          ],
+          "key_components": [
+            "Global Developed Equity Index Fund",
+            "Asia ex-Japan Equity Fund",
+            "US Technology Leaders Fund",
+            "Asia Investment Grade Credit Fund"
+          ],
+          "estimated_allocation_usd": 20009638.0,
+          "rationale": "Matches Balanced risk profile. Addresses: balanced growth mandate."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $40,019,276 | Risk: Balanced | Stage: Retired - legacy and philanthropy | Top holdings: N/A | Single stock count: 0 | Flags: 2 (single_position_breach)",
+      "implementation_notes": "Phase diversification over 12 months (10% quarterly tranches) to manage market impact and tax | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0013",
+      "name": "Zhang Meiling",
+      "aum_usd": 36952084.12,
+      "risk_profile": "Growth",
+      "life_stage": "Wealth accumulation",
+      "primary_bundle": {
+        "bundle_key": "GROWTH_ACCELERATION",
+        "bundle_name": "Growth Acceleration & Alpha Bundle",
+        "fit_score": 95,
+        "triggered_flags": [
+          "growth_profile"
+        ],
+        "key_components": [
+          "US Technology Leaders Fund",
+          "Emerging Markets Equity Fund",
+          "Private Equity Co-Investment",
+          "Venture Capital Fund"
+        ],
+        "estimated_allocation_usd": 18476042.06,
+        "rationale": "Matches Growth risk profile. Aligned with Wealth accumulation life stage. Addresses: growth-oriented mandate."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 11085625.24,
+          "rationale": "Addresses: concentration breaches."
+        },
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 11085625.24,
+          "rationale": "."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $36,952,084 | Risk: Growth | Stage: Wealth accumulation | Top holdings: N/A | Single stock count: 0 | Flags: 2 (single_position_breach)",
+      "implementation_notes": "Requires qualified purchaser status; illiquidity lock-up 7-10 years for PE/VC allocations | Complementary: Add collar structure on concentrated position while staging exit | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0011",
+      "name": "Tan Boon Huat",
+      "aum_usd": 35335041.42,
+      "risk_profile": "Conservative",
+      "life_stage": "Succession and estate planning",
+      "primary_bundle": {
+        "bundle_key": "WEALTH_PRESERVATION",
+        "bundle_name": "Wealth Preservation & Legacy Bundle",
+        "fit_score": 95,
+        "triggered_flags": [
+          "conservative_profile"
+        ],
+        "key_components": [
+          "Short Duration Bond Fund",
+          "Inflation-Linked Bonds",
+          "Global Dividend Equity Fund",
+          "Gold Bullion ETF"
+        ],
+        "estimated_allocation_usd": 17667520.71,
+        "rationale": "Matches Conservative risk profile. Aligned with Succession and estate planning life stage. Addresses: capital preservation mandate."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 10600512.43,
+          "rationale": "Addresses: concentration breaches."
+        },
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 10600512.43,
+          "rationale": "."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $35,335,041 | Risk: Conservative | Stage: Succession and estate planning | Top holdings: N/A | Single stock count: 0 | Flags: 5 (single_position_breach)",
+      "implementation_notes": "Complementary: Add collar structure on concentrated position while staging exit | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0004",
+      "name": "Chalermchai Suphanburi",
+      "aum_usd": 33453055.03,
+      "risk_profile": "Income",
+      "life_stage": "Pre-retirement",
+      "primary_bundle": {
+        "bundle_key": "WEALTH_PRESERVATION",
+        "bundle_name": "Wealth Preservation & Legacy Bundle",
+        "fit_score": 95,
+        "triggered_flags": [
+          "conservative_profile"
+        ],
+        "key_components": [
+          "Short Duration Bond Fund",
+          "Inflation-Linked Bonds",
+          "Global Dividend Equity Fund",
+          "Gold Bullion ETF"
+        ],
+        "estimated_allocation_usd": 16726527.52,
+        "rationale": "Matches Income risk profile. Aligned with Pre-retirement life stage. Addresses: capital preservation mandate."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 10035916.51,
+          "rationale": "Addresses: concentration breaches."
+        },
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 10035916.51,
+          "rationale": "."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $33,453,055 | Risk: Income | Stage: Pre-retirement | Top holdings: N/A | Single stock count: 0 | Flags: 4 (single_position_breach)",
+      "implementation_notes": "Complementary: Add collar structure on concentrated position while staging exit | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0009",
+      "name": "Andreas Lindqvist",
+      "aum_usd": 31613603.44,
+      "risk_profile": "Balanced",
+      "life_stage": "Post-liquidity event",
+      "primary_bundle": {
+        "bundle_key": "POST_LIQUIDITY_DEPLOYMENT",
+        "bundle_name": "Post-Liquidity Event Deployment Bundle",
+        "fit_score": 100,
+        "triggered_flags": [
+          "single_position_breach",
+          "post_liquidity_event"
+        ],
+        "key_components": [
+          "Staged Deployment Program",
+          "Tax-Managed Equity Portfolio",
+          "Municipal Bond Ladder",
+          "Alternatives Diversifier"
+        ],
+        "estimated_allocation_usd": 9484081.03,
+        "rationale": "Matches Balanced risk profile. Aligned with Post-liquidity event life stage. Addresses: concentration breaches, post-liquidity event deployment need."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "BALANCED_GROWTH",
+          "bundle_name": "Balanced Growth & Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "balanced_profile"
+          ],
+          "key_components": [
+            "Global Developed Equity Index Fund",
+            "Asia ex-Japan Equity Fund",
+            "US Technology Leaders Fund",
+            "Asia Investment Grade Credit Fund"
+          ],
+          "estimated_allocation_usd": 15806801.72,
+          "rationale": "Matches Balanced risk profile. Aligned with Post-liquidity event life stage. Addresses: balanced growth mandate."
+        },
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 9484081.03,
+          "rationale": "Addresses: concentration breaches."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $31,613,603 | Risk: Balanced | Stage: Post-liquidity event | Top holdings: N/A | Single stock count: 0 | Flags: 2 (single_position_breach)",
+      "implementation_notes": "Deploy proceeds over 12-24 months via staged DCA; pre-approve rebalancing bands | Complementary: Add collar structure on concentrated position while staging exit"
+    },
+    {
+      "client_id": "CL-0012",
+      "name": "Cheung Kwok Wing",
+      "aum_usd": 28028704.71,
+      "risk_profile": "Income",
+      "life_stage": "Retired",
+      "primary_bundle": {
+        "bundle_key": "WEALTH_PRESERVATION",
+        "bundle_name": "Wealth Preservation & Legacy Bundle",
+        "fit_score": 95,
+        "triggered_flags": [
+          "conservative_profile"
+        ],
+        "key_components": [
+          "Short Duration Bond Fund",
+          "Inflation-Linked Bonds",
+          "Global Dividend Equity Fund",
+          "Gold Bullion ETF"
+        ],
+        "estimated_allocation_usd": 14014352.36,
+        "rationale": "Matches Income risk profile. Aligned with Retired life stage. Addresses: capital preservation mandate."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 8408611.41,
+          "rationale": "Addresses: concentration breaches."
+        },
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 8408611.41,
+          "rationale": "."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $28,028,705 | Risk: Income | Stage: Retired | Top holdings: N/A | Single stock count: 0 | Flags: 3 (single_position_breach)",
+      "implementation_notes": "Complementary: Add collar structure on concentrated position while staging exit | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0014",
+      "name": "Lau Chi Ming",
+      "aum_usd": 26488970.55,
+      "risk_profile": "Balanced",
+      "life_stage": "Peak earning years",
+      "primary_bundle": {
+        "bundle_key": "CONCENTRATION_SOLUTION",
+        "bundle_name": "Concentration Risk Diversification Bundle",
+        "fit_score": 100,
+        "triggered_flags": [
+          "single_position_breach",
+          "ltv_margin_call_risk",
+          "margin_call_risk"
+        ],
+        "key_components": [
+          "Exchange Fund / Swap Structure",
+          "Collar / Put Spread Structure",
+          "Global Developed Equity Index Fund",
+          "Short Duration USD Bond Fund"
+        ],
+        "estimated_allocation_usd": 7946691.17,
+        "rationale": "Addresses: concentration breaches, ltv_margin_call_risk, margin call proximity risk."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "BALANCED_GROWTH",
+          "bundle_name": "Balanced Growth & Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "balanced_profile"
+          ],
+          "key_components": [
+            "Global Developed Equity Index Fund",
+            "Asia ex-Japan Equity Fund",
+            "US Technology Leaders Fund",
+            "Asia Investment Grade Credit Fund"
+          ],
+          "estimated_allocation_usd": 13244485.28,
+          "rationale": "Matches Balanced risk profile. Aligned with Peak earning years life stage. Addresses: balanced growth mandate."
+        },
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "margin_call_risk"
+          ],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 7946691.17,
+          "rationale": "Addresses: margin call proximity risk."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $26,488,971 | Risk: Balanced | Stage: Peak earning years | Top holdings: N/A | Single stock count: 0 | Flags: 6 (ltv_margin_call_risk, single_position_breach)",
+      "implementation_notes": "Phase diversification over 12 months (10% quarterly tranches) to manage market impact and tax | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0018",
+      "name": "Elena Marchetti-Wong",
+      "aum_usd": 22597824.97,
+      "risk_profile": "Balanced",
+      "life_stage": "Peak earning years",
+      "primary_bundle": {
+        "bundle_key": "BALANCED_GROWTH",
+        "bundle_name": "Balanced Growth & Diversification Bundle",
+        "fit_score": 90,
+        "triggered_flags": [
+          "balanced_profile"
+        ],
+        "key_components": [
+          "Global Developed Equity Index Fund",
+          "Asia ex-Japan Equity Fund",
+          "US Technology Leaders Fund",
+          "Asia Investment Grade Credit Fund"
+        ],
+        "estimated_allocation_usd": 11298912.48,
+        "rationale": "Matches Balanced risk profile. Aligned with Peak earning years life stage. Addresses: balanced growth mandate."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 6779347.49,
+          "rationale": "Addresses: concentration breaches."
+        },
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 6779347.49,
+          "rationale": "."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $22,597,825 | Risk: Balanced | Stage: Peak earning years | Top holdings: N/A | Single stock count: 0 | Flags: 4 (single_position_breach)",
+      "implementation_notes": "Complementary: Add collar structure on concentrated position while staging exit | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0003",
+      "name": "Margarethe Voss-Brenner",
+      "aum_usd": 22181135.66,
+      "risk_profile": "Conservative",
+      "life_stage": "Recently inherited - transition",
+      "primary_bundle": {
+        "bundle_key": "CONCENTRATION_SOLUTION",
+        "bundle_name": "Concentration Risk Diversification Bundle",
+        "fit_score": 90,
+        "triggered_flags": [
+          "single_position_breach"
+        ],
+        "key_components": [
+          "Exchange Fund / Swap Structure",
+          "Collar / Put Spread Structure",
+          "Global Developed Equity Index Fund",
+          "Short Duration USD Bond Fund"
+        ],
+        "estimated_allocation_usd": 6654340.7,
+        "rationale": "Addresses: concentration breaches."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 6654340.7,
+          "rationale": "."
+        },
+        {
+          "bundle_key": "WEALTH_PRESERVATION",
+          "bundle_name": "Wealth Preservation & Legacy Bundle",
+          "fit_score": 70,
+          "triggered_flags": [
+            "conservative_profile"
+          ],
+          "key_components": [
+            "Short Duration Bond Fund",
+            "Inflation-Linked Bonds",
+            "Global Dividend Equity Fund",
+            "Gold Bullion ETF"
+          ],
+          "estimated_allocation_usd": 11090567.83,
+          "rationale": "Matches Conservative risk profile. Addresses: capital preservation mandate."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $22,181,136 | Risk: Conservative | Stage: Recently inherited - transition | Top holdings: N/A | Single stock count: 0 | Flags: 4 (single_position_breach)",
+      "implementation_notes": "Phase diversification over 12 months (10% quarterly tranches) to manage market impact and tax | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0005",
+      "name": "Aishah binti Rahman",
+      "aum_usd": 19400737.87,
+      "risk_profile": "Sustainable Balanced",
+      "life_stage": "Peak earning years",
+      "primary_bundle": {
+        "bundle_key": "SUSTAINABLE_IMPACT",
+        "bundle_name": "Sustainable Impact & Transition Bundle",
+        "fit_score": 100,
+        "triggered_flags": [
+          "sustainable_profile"
+        ],
+        "key_components": [
+          "Global Sustainable Equity Fund",
+          "Green Bond Fund",
+          "Climate Transition Fund",
+          "Impact Private Credit"
+        ],
+        "estimated_allocation_usd": 9700368.94,
+        "rationale": "Matches Sustainable Balanced risk profile. Aligned with Peak earning years life stage. Addresses: sustainable investing mandate."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "BALANCED_GROWTH",
+          "bundle_name": "Balanced Growth & Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "balanced_profile"
+          ],
+          "key_components": [
+            "Global Developed Equity Index Fund",
+            "Asia ex-Japan Equity Fund",
+            "US Technology Leaders Fund",
+            "Asia Investment Grade Credit Fund"
+          ],
+          "estimated_allocation_usd": 9700368.94,
+          "rationale": "Matches Sustainable Balanced risk profile. Aligned with Peak earning years life stage. Addresses: balanced growth mandate."
+        },
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 5820221.36,
+          "rationale": "Addresses: concentration breaches."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $19,400,738 | Risk: Sustainable Balanced | Stage: Peak earning years | Top holdings: N/A | Single stock count: 0 | Flags: 4 (single_position_breach)",
+      "implementation_notes": "Complementary: Add collar structure on concentrated position while staging exit"
+    },
+    {
+      "client_id": "CL-0020",
+      "name": "Grace Adeyemi-Lim",
+      "aum_usd": 19059758.28,
+      "risk_profile": "Growth",
+      "life_stage": "Wealth accumulation",
+      "primary_bundle": {
+        "bundle_key": "LIQUIDITY_BRIDGE",
+        "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+        "fit_score": 100,
+        "triggered_flags": [
+          "liquidity_gap",
+          "liquidity_gap"
+        ],
+        "key_components": [
+          "Ultra-Short Treasury Fund",
+          "Committed Credit Facility",
+          "Money Market Fund",
+          "Structured Deposit"
+        ],
+        "estimated_allocation_usd": 5717927.48,
+        "rationale": "Addresses: liquidity shortfall for capital calls, liquidity shortfall for capital calls."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "GROWTH_ACCELERATION",
+          "bundle_name": "Growth Acceleration & Alpha Bundle",
+          "fit_score": 95,
+          "triggered_flags": [
+            "growth_profile"
+          ],
+          "key_components": [
+            "US Technology Leaders Fund",
+            "Emerging Markets Equity Fund",
+            "Private Equity Co-Investment",
+            "Venture Capital Fund"
+          ],
+          "estimated_allocation_usd": 9529879.14,
+          "rationale": "Matches Growth risk profile. Aligned with Wealth accumulation life stage. Addresses: growth-oriented mandate."
+        },
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 5717927.48,
+          "rationale": "Addresses: concentration breaches."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $19,059,758 | Risk: Growth | Stage: Wealth accumulation | Top holdings: N/A | Single stock count: 0 | Flags: 2 (liquidity_gap, single_position_breach)",
+      "implementation_notes": "Liquidity gap: cash on hand $850,000 vs uncalled commitments $900,000 (shortfall $50,000) | Complementary: Add collar structure on concentrated position while staging exit"
+    },
+    {
+      "client_id": "CL-0006",
+      "name": "Nguyen Thi Bao Tran",
+      "aum_usd": 18072993.49,
+      "risk_profile": "Balanced",
+      "life_stage": "Wealth accumulation",
+      "primary_bundle": {
+        "bundle_key": "LIQUIDITY_BRIDGE",
+        "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+        "fit_score": 100,
+        "triggered_flags": [
+          "liquidity_gap",
+          "fund_gating",
+          "liquidity_gap",
+          "fund_gating"
+        ],
+        "key_components": [
+          "Ultra-Short Treasury Fund",
+          "Committed Credit Facility",
+          "Money Market Fund",
+          "Structured Deposit"
+        ],
+        "estimated_allocation_usd": 5421898.05,
+        "rationale": "Addresses: liquidity shortfall for capital calls, gated fund redemption constraints, liquidity shortfall for capital calls, gated fund redemption constraints."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "BALANCED_GROWTH",
+          "bundle_name": "Balanced Growth & Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "balanced_profile"
+          ],
+          "key_components": [
+            "Global Developed Equity Index Fund",
+            "Asia ex-Japan Equity Fund",
+            "US Technology Leaders Fund",
+            "Asia Investment Grade Credit Fund"
+          ],
+          "estimated_allocation_usd": 9036496.74,
+          "rationale": "Matches Balanced risk profile. Aligned with Wealth accumulation life stage. Addresses: balanced growth mandate."
+        },
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 5421898.05,
+          "rationale": "Addresses: concentration breaches."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $18,072,993 | Risk: Balanced | Stage: Wealth accumulation | Top holdings: N/A | Single stock count: 0 | Flags: 5 (liquidity_gap, fund_gating, single_position_breach)",
+      "implementation_notes": "Liquidity gap: cash on hand $2,071,006 vs uncalled commitments $3,000,000 (shortfall $928,994) | Fund gating: RM note (2026-05-12): \"Client needs USD liquidity for capital calls and the first US tuition instalment. Submitted a redemption on the private credit fund. Warned \" | Complementary: Add collar structure on concentrated position while staging exit"
+    },
+    {
+      "client_id": "CL-0016",
+      "name": "Yamamoto Kenji",
+      "aum_usd": 14508066.73,
+      "risk_profile": "Balanced",
+      "life_stage": "Pre-retirement",
+      "primary_bundle": {
+        "bundle_key": "CONCENTRATION_SOLUTION",
+        "bundle_name": "Concentration Risk Diversification Bundle",
+        "fit_score": 90,
+        "triggered_flags": [
+          "single_position_breach"
+        ],
+        "key_components": [
+          "Exchange Fund / Swap Structure",
+          "Collar / Put Spread Structure",
+          "Global Developed Equity Index Fund",
+          "Short Duration USD Bond Fund"
+        ],
+        "estimated_allocation_usd": 4352420.02,
+        "rationale": "Addresses: concentration breaches."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 4352420.02,
+          "rationale": "."
+        },
+        {
+          "bundle_key": "BALANCED_GROWTH",
+          "bundle_name": "Balanced Growth & Diversification Bundle",
+          "fit_score": 65,
+          "triggered_flags": [
+            "balanced_profile"
+          ],
+          "key_components": [
+            "Global Developed Equity Index Fund",
+            "Asia ex-Japan Equity Fund",
+            "US Technology Leaders Fund",
+            "Asia Investment Grade Credit Fund"
+          ],
+          "estimated_allocation_usd": 7254033.37,
+          "rationale": "Matches Balanced risk profile. Addresses: balanced growth mandate."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $14,508,067 | Risk: Balanced | Stage: Pre-retirement | Top holdings: N/A | Single stock count: 0 | Flags: 4 (single_position_breach)",
+      "implementation_notes": "Phase diversification over 12 months (10% quarterly tranches) to manage market impact and tax | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0008",
+      "name": "Chen Wei Ling",
+      "aum_usd": 11952546.04,
+      "risk_profile": "Balanced",
+      "life_stage": "Peak earning years",
+      "primary_bundle": {
+        "bundle_key": "BALANCED_GROWTH",
+        "bundle_name": "Balanced Growth & Diversification Bundle",
+        "fit_score": 90,
+        "triggered_flags": [
+          "balanced_profile"
+        ],
+        "key_components": [
+          "Global Developed Equity Index Fund",
+          "Asia ex-Japan Equity Fund",
+          "US Technology Leaders Fund",
+          "Asia Investment Grade Credit Fund"
+        ],
+        "estimated_allocation_usd": 5976273.02,
+        "rationale": "Matches Balanced risk profile. Aligned with Peak earning years life stage. Addresses: balanced growth mandate."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 3585763.81,
+          "rationale": "Addresses: concentration breaches."
+        },
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 3585763.81,
+          "rationale": "."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $11,952,546 | Risk: Balanced | Stage: Peak earning years | Top holdings: N/A | Single stock count: 0 | Flags: 4 (single_position_breach)",
+      "implementation_notes": "Complementary: Add collar structure on concentrated position while staging exit | Complementary: Establish standby credit facility for capital call coverage"
+    },
+    {
+      "client_id": "CL-0010",
+      "name": "Priya Nair Menon",
+      "aum_usd": 8182936.09,
+      "risk_profile": "Sustainable Balanced",
+      "life_stage": "Early career - next generation",
+      "primary_bundle": {
+        "bundle_key": "SUSTAINABLE_IMPACT",
+        "bundle_name": "Sustainable Impact & Transition Bundle",
+        "fit_score": 100,
+        "triggered_flags": [
+          "sustainable_profile"
+        ],
+        "key_components": [
+          "Global Sustainable Equity Fund",
+          "Green Bond Fund",
+          "Climate Transition Fund",
+          "Impact Private Credit"
+        ],
+        "estimated_allocation_usd": 4091468.04,
+        "rationale": "Matches Sustainable Balanced risk profile. Aligned with Early career - next generation life stage. Addresses: sustainable investing mandate."
+      },
+      "complementary_bundles": [
+        {
+          "bundle_key": "CONCENTRATION_SOLUTION",
+          "bundle_name": "Concentration Risk Diversification Bundle",
+          "fit_score": 90,
+          "triggered_flags": [
+            "single_position_breach"
+          ],
+          "key_components": [
+            "Exchange Fund / Swap Structure",
+            "Collar / Put Spread Structure",
+            "Global Developed Equity Index Fund",
+            "Short Duration USD Bond Fund"
+          ],
+          "estimated_allocation_usd": 2454880.83,
+          "rationale": "Addresses: concentration breaches."
+        },
+        {
+          "bundle_key": "LIQUIDITY_BRIDGE",
+          "bundle_name": "Liquidity Bridge & Capital Call Bundle",
+          "fit_score": 75,
+          "triggered_flags": [],
+          "key_components": [
+            "Ultra-Short Treasury Fund",
+            "Committed Credit Facility",
+            "Money Market Fund",
+            "Structured Deposit"
+          ],
+          "estimated_allocation_usd": 2454880.83,
+          "rationale": "."
+        }
+      ],
+      "portfolio_context_summary": "AUM: $8,182,936 | Risk: Sustainable Balanced | Stage: Early career - next generation | Top holdings: N/A | Single stock count: 0 | Flags: 5 (single_position_breach)",
+      "implementation_notes": "Complementary: Add collar structure on concentrated position while staging exit | Complementary: Establish standby credit facility for capital call coverage"
+    }
+  ]
+}
