@@ -1,0 +1,570 @@
+{
+  "CL-0001": {
+    "client_id": "CL-0001",
+    "name": "Hartono Wijaya Kusuma",
+    "aum_usd": 46571821.48,
+    "risk_profile": "Balanced Growth",
+    "life_stage": "Wealth accumulation - second generation",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.77,
+        "detail": "SYN-EQ-0001 at 26.6% vs 15% cap in Core Discretionary Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.05,
+        "detail": "SYN-FI-0204 at 15.7% vs 15% cap in Core Discretionary Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 1.0,
+        "detail": "SYN-ST-0101 at 98.0% vs 15% cap in Legacy Holdings Custody Account"
+      }
+    ],
+    "max_flag_severity": 1.0,
+    "severity_weighted_exposure_usd": 46571821.0
+  },
+  "CL-0002": {
+    "client_id": "CL-0002",
+    "name": "Ravi Chandrasekaran",
+    "aum_usd": 46699200.0,
+    "risk_profile": "Growth",
+    "life_stage": "Pre-liquidity event",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.6,
+        "detail": "SYN-EQ-0003 at 24.0% vs 15% cap in Advisory Growth Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.01,
+        "detail": "SYN-ST-0102 at 15.2% vs 15% cap in Advisory Growth Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 1.0,
+        "detail": "SYN-AL-0308 at 100.0% vs 15% cap in Founder Shareholding Custody"
+      },
+      {
+        "type": "ltv_margin_call_risk",
+        "severity": 0.87,
+        "detail": "LTV 73.7% vs margin call trigger 75.0% (facility CF-0001, gap 1.3pp)"
+      }
+    ],
+    "max_flag_severity": 1.0,
+    "severity_weighted_exposure_usd": 46699200.0
+  },
+  "CL-0003": {
+    "client_id": "CL-0003",
+    "name": "Margarethe Voss-Brenner",
+    "aum_usd": 22181135.66,
+    "risk_profile": "Conservative",
+    "life_stage": "Recently inherited - transition",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 1.0,
+        "detail": "SYN-EQ-0010 at 26.1% vs 10% cap in Inherited Portfolio - Under Review"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.84,
+        "detail": "SYN-ST-0107 at 18.4% vs 10% cap in Inherited Portfolio - Under Review"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.63,
+        "detail": "SYN-EQ-0004 at 16.3% vs 10% cap in Inherited Portfolio - Under Review"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.07,
+        "detail": "SYN-EQ-0003 at 10.7% vs 10% cap in Inherited Portfolio - Under Review"
+      }
+    ],
+    "max_flag_severity": 1.0,
+    "severity_weighted_exposure_usd": 22181136.0
+  },
+  "CL-0004": {
+    "client_id": "CL-0004",
+    "name": "Chalermchai Suphanburi",
+    "aum_usd": 33453055.03,
+    "risk_profile": "Income",
+    "life_stage": "Pre-retirement",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.57,
+        "detail": "SYN-FI-0201 at 15.7% vs 10% cap in Retirement Income Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.6,
+        "detail": "SYN-FI-0203 at 16.0% vs 10% cap in Retirement Income Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.4,
+        "detail": "SYN-FI-0204 at 14.0% vs 10% cap in Retirement Income Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.14,
+        "detail": "SYN-FI-0206 at 11.4% vs 10% cap in Retirement Income Mandate"
+      }
+    ],
+    "max_flag_severity": 0.6,
+    "severity_weighted_exposure_usd": 20071833.0
+  },
+  "CL-0005": {
+    "client_id": "CL-0005",
+    "name": "Aishah binti Rahman",
+    "aum_usd": 19400737.87,
+    "risk_profile": "Sustainable Balanced",
+    "life_stage": "Peak earning years",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.23,
+        "detail": "SYN-EQ-0001 at 14.7% vs 12% cap in Sustainable Balanced Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.07,
+        "detail": "SYN-EQ-0006 at 12.8% vs 12% cap in Sustainable Balanced Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.17,
+        "detail": "SYN-FI-0211 at 14.0% vs 12% cap in Sustainable Balanced Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.04,
+        "detail": "SYN-FI-0203 at 12.5% vs 12% cap in Sustainable Balanced Mandate"
+      }
+    ],
+    "max_flag_severity": 0.23,
+    "severity_weighted_exposure_usd": 4462170.0
+  },
+  "CL-0006": {
+    "client_id": "CL-0006",
+    "name": "Nguyen Thi Bao Tran",
+    "aum_usd": 18072993.49,
+    "risk_profile": "Balanced",
+    "life_stage": "Wealth accumulation",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.88,
+        "detail": "SYN-FI-0211 at 22.5% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.18,
+        "detail": "SYN-EQ-0023 at 14.2% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.13,
+        "detail": "SYN-EQ-0024 at 13.5% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "liquidity_gap",
+        "severity": 0.4,
+        "detail": "cash on hand $2,071,006 vs uncalled commitments $3,000,000 (shortfall $928,994)"
+      },
+      {
+        "type": "fund_gating",
+        "severity": 0.7,
+        "detail": "RM note (2026-05-12): \"Client needs USD liquidity for capital calls and the first US tuition instalment. Submitted a redemption on the private credit fund. Warned \""
+      }
+    ],
+    "max_flag_severity": 0.88,
+    "severity_weighted_exposure_usd": 15904234.0
+  },
+  "CL-0007": {
+    "client_id": "CL-0007",
+    "name": "Alistair Pemberton-Hale",
+    "aum_usd": 40019276.0,
+    "risk_profile": "Balanced",
+    "life_stage": "Retired - legacy and philanthropy",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.09,
+        "detail": "SYN-EQ-0001 at 13.1% vs 12% cap in Core Balanced Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.03,
+        "detail": "SYN-FI-0202 at 12.4% vs 12% cap in Core Balanced Mandate"
+      }
+    ],
+    "max_flag_severity": 0.09,
+    "severity_weighted_exposure_usd": 3601735.0
+  },
+  "CL-0008": {
+    "client_id": "CL-0008",
+    "name": "Chen Wei Ling",
+    "aum_usd": 11952546.04,
+    "risk_profile": "Balanced",
+    "life_stage": "Peak earning years",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.33,
+        "detail": "SYN-EQ-0001 at 15.9% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.42,
+        "detail": "SYN-FI-0211 at 17.0% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.28,
+        "detail": "SYN-FI-0208 at 15.3% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.13,
+        "detail": "SYN-CA-0602 at 13.6% vs 12% cap in Advisory Balanced Portfolio"
+      }
+    ],
+    "max_flag_severity": 0.42,
+    "severity_weighted_exposure_usd": 5020069.0
+  },
+  "CL-0009": {
+    "client_id": "CL-0009",
+    "name": "Andreas Lindqvist",
+    "aum_usd": 31613603.44,
+    "risk_profile": "Balanced",
+    "life_stage": "Post-liquidity event",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 1.0,
+        "detail": "SYN-CA-0604 at 33.9% vs 12% cap in Post-Sale Deployment Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.43,
+        "detail": "SYN-ST-0107 at 17.2% vs 12% cap in Post-Sale Deployment Portfolio"
+      }
+    ],
+    "max_flag_severity": 1.0,
+    "severity_weighted_exposure_usd": 31613603.0
+  },
+  "CL-0010": {
+    "client_id": "CL-0010",
+    "name": "Priya Nair Menon",
+    "aum_usd": 8182936.09,
+    "risk_profile": "Sustainable Balanced",
+    "life_stage": "Early career - next generation",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.01,
+        "detail": "SYN-EQ-0006 at 12.2% vs 12% cap in Sustainable Balanced Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.14,
+        "detail": "SYN-EQ-0009 at 13.7% vs 12% cap in Sustainable Balanced Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.21,
+        "detail": "SYN-EQ-0001 at 14.5% vs 12% cap in Sustainable Balanced Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.8,
+        "detail": "SYN-FI-0211 at 21.6% vs 12% cap in Sustainable Balanced Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.26,
+        "detail": "SYN-FI-0212 at 15.2% vs 12% cap in Sustainable Balanced Mandate"
+      }
+    ],
+    "max_flag_severity": 0.8,
+    "severity_weighted_exposure_usd": 6546349.0
+  },
+  "CL-0011": {
+    "client_id": "CL-0011",
+    "name": "Tan Boon Huat",
+    "aum_usd": 35335041.42,
+    "risk_profile": "Conservative",
+    "life_stage": "Succession and estate planning",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.83,
+        "detail": "SYN-AL-0306 at 18.3% vs 10% cap in Consolidated Family Account"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 1.0,
+        "detail": "SYN-AL-0305 at 20.4% vs 10% cap in Consolidated Family Account"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.27,
+        "detail": "SYN-EQ-0024 at 12.7% vs 10% cap in Consolidated Family Account"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.35,
+        "detail": "SYN-FI-0211 at 13.5% vs 10% cap in Consolidated Family Account"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.1,
+        "detail": "SYN-FI-0203 at 11.0% vs 10% cap in Consolidated Family Account"
+      }
+    ],
+    "max_flag_severity": 1.0,
+    "severity_weighted_exposure_usd": 35335041.0
+  },
+  "CL-0012": {
+    "client_id": "CL-0012",
+    "name": "Cheung Kwok Wing",
+    "aum_usd": 28028704.71,
+    "risk_profile": "Income",
+    "life_stage": "Retired",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 1.0,
+        "detail": "SYN-FI-0201 at 20.8% vs 10% cap in Retirement Income Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.67,
+        "detail": "SYN-FI-0203 at 16.7% vs 10% cap in Retirement Income Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.51,
+        "detail": "SYN-FI-0204 at 15.1% vs 10% cap in Retirement Income Mandate"
+      }
+    ],
+    "max_flag_severity": 1.0,
+    "severity_weighted_exposure_usd": 28028705.0
+  },
+  "CL-0013": {
+    "client_id": "CL-0013",
+    "name": "Zhang Meiling",
+    "aum_usd": 36952084.12,
+    "risk_profile": "Growth",
+    "life_stage": "Wealth accumulation",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.5,
+        "detail": "SYN-EQ-0003 at 22.4% vs 15% cap in Advisory Growth Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.03,
+        "detail": "SYN-ST-0103 at 15.4% vs 15% cap in Advisory Growth Portfolio"
+      }
+    ],
+    "max_flag_severity": 0.5,
+    "severity_weighted_exposure_usd": 18476042.0
+  },
+  "CL-0014": {
+    "client_id": "CL-0014",
+    "name": "Lau Chi Ming",
+    "aum_usd": 26488970.55,
+    "risk_profile": "Balanced",
+    "life_stage": "Peak earning years",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.07,
+        "detail": "SYN-FI-0207 at 12.9% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.46,
+        "detail": "SYN-FI-0206 at 17.6% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.15,
+        "detail": "SYN-EQ-0021 at 13.8% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.15,
+        "detail": "SYN-FI-0205 at 13.8% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.63,
+        "detail": "SYN-AL-0307 at 19.6% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "ltv_margin_call_risk",
+        "severity": 0.94,
+        "detail": "LTV 69.4% vs margin call trigger 70.0% (facility CF-0002, gap 0.6pp)"
+      }
+    ],
+    "max_flag_severity": 0.94,
+    "severity_weighted_exposure_usd": 24899632.0
+  },
+  "CL-0016": {
+    "client_id": "CL-0016",
+    "name": "Yamamoto Kenji",
+    "aum_usd": 14508066.73,
+    "risk_profile": "Balanced",
+    "life_stage": "Pre-retirement",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.68,
+        "detail": "SYN-ST-0108 at 20.1% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.31,
+        "detail": "SYN-EQ-0005 at 15.7% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.23,
+        "detail": "SYN-EQ-0001 at 14.8% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.12,
+        "detail": "SYN-FI-0203 at 13.4% vs 12% cap in Advisory Balanced Portfolio"
+      }
+    ],
+    "max_flag_severity": 0.68,
+    "severity_weighted_exposure_usd": 9865485.0
+  },
+  "CL-0017": {
+    "client_id": "CL-0017",
+    "name": "Fong Enterprises Family Office",
+    "aum_usd": 87902980.0,
+    "risk_profile": "Balanced",
+    "life_stage": "Multi-generational - G2 and G3",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.9,
+        "detail": "SYN-EQ-0001 at 22.8% vs 12% cap in Family Office Core Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.19,
+        "detail": "SYN-EQ-0002 at 14.3% vs 12% cap in Family Office Core Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.16,
+        "detail": "SYN-FI-0203 at 14.0% vs 12% cap in Family Office Core Mandate"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.41,
+        "detail": "SYN-AL-0301 at 35.3% vs 25% cap in Alternatives Sleeve"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.12,
+        "detail": "SYN-AL-0302 at 28.0% vs 25% cap in Alternatives Sleeve"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.99,
+        "detail": "SYN-EQ-0003 at 29.8% vs 15% cap in Next Generation Account"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.42,
+        "detail": "SYN-FI-0208 at 21.3% vs 15% cap in Next Generation Account"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.06,
+        "detail": "SYN-CA-0607 at 15.9% vs 15% cap in Next Generation Account"
+      },
+      {
+        "type": "liquidity_gap",
+        "severity": 0.66,
+        "detail": "cash on hand $5,393,600 vs uncalled commitments $15,800,000 (shortfall $10,406,400)"
+      },
+      {
+        "type": "fund_gating",
+        "severity": 0.7,
+        "detail": "RM note (2026-02-10): \"Capital call of USD 3.2m met from the sleeve's cash. Flagged to the family office CFO that between the remaining commitments and the gated p\""
+      },
+      {
+        "type": "fund_gating",
+        "severity": 0.7,
+        "detail": "RM note (2026-06-30): \"Investment committee review. G2 wants to keep the core mandate conservative. G3 representatives pushed for more technology and venture expos\""
+      }
+    ],
+    "max_flag_severity": 0.99,
+    "severity_weighted_exposure_usd": 87023950.0
+  },
+  "CL-0018": {
+    "client_id": "CL-0018",
+    "name": "Elena Marchetti-Wong",
+    "aum_usd": 22597824.97,
+    "risk_profile": "Balanced",
+    "life_stage": "Peak earning years",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.36,
+        "detail": "SYN-EQ-0010 at 16.3% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.11,
+        "detail": "SYN-EQ-0004 at 13.4% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.05,
+        "detail": "SYN-EQ-0001 at 12.6% vs 12% cap in Advisory Balanced Portfolio"
+      },
+      {
+        "type": "single_position_breach",
+        "severity": 0.2,
+        "detail": "SYN-FI-0209 at 14.4% vs 12% cap in Advisory Balanced Portfolio"
+      }
+    ],
+    "max_flag_severity": 0.36,
+    "severity_weighted_exposure_usd": 8135217.0
+  },
+  "CL-0020": {
+    "client_id": "CL-0020",
+    "name": "Grace Adeyemi-Lim",
+    "aum_usd": 19059758.28,
+    "risk_profile": "Growth",
+    "life_stage": "Wealth accumulation",
+    "flags": [
+      {
+        "type": "single_position_breach",
+        "severity": 0.16,
+        "detail": "SYN-EQ-0006 at 17.4% vs 15% cap in Advisory Growth Portfolio"
+      },
+      {
+        "type": "liquidity_gap",
+        "severity": 0.4,
+        "detail": "cash on hand $850,000 vs uncalled commitments $900,000 (shortfall $50,000)"
+      }
+    ],
+    "max_flag_severity": 0.4,
+    "severity_weighted_exposure_usd": 7623903.0
+  }
+}
